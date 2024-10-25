@@ -1,0 +1,122 @@
+[
+    {
+      "playerId": 8,
+      "name": "Chris Gayle",
+      "country": "West Indies",
+      "image": "https://i.ibb.co.com/DG796wq/chris-gayle-cropped-5tll9v7jx70019kn84ypi0dl6.jpg",
+      "role": "Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm off-break",
+      "biddingPrice": 8000000
+    },
+    {
+      "playerId": 2,
+      "name": "Steve Smith",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/zn940Md/stevesmith0108a.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Leg-spin",
+      "biddingPrice": 2200000
+    },
+    {
+      "playerId": 3,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://i.ibb.co.com/gS6KC6h/ben-stokes-england-team-captain-9lnz8wd6kgsusev8.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 3000000
+    },
+    {
+      "playerId": 4,
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/Sd71psZ/wp8897999.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Off-spin",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 11,
+      "name": "Andre Russell",
+      "country": "West Indies",
+      "image": "https://i.ibb.co.com/0qK52cM/3414523.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm medium-fast",
+      "biddingPrice": 15000000
+    },
+    {
+      "playerId": 6,
+      "name": "Pat Cummins",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/dDsRv9X/CUMMINS-PV4-1280x720-01.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 2800000
+    },
+    {
+      "playerId": 7,
+      "name": "Shaheen Afridi",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/dL9LCDY/7934021.webp",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 2300000
+    },
+    {
+      "playerId": 8,
+      "name": "Jos Buttler",
+      "country": "England",
+      "image": "https://i.ibb.co.com/8gv53vZ/jos-buttler-cricket-bat-k0lhltdry1vg2rls.jpg",
+      "role": "Wicketkeeper",
+      "battingType": "Right-handed",
+      "bowlingType": "None",
+      "biddingPrice": 2700000
+    },
+    {
+      "playerId": 9,
+      "name": "David Warner",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/BP0Cnts/2555153.webp",
+      "role": "Batsman",
+      "battingType": "Left-handed",
+      "bowlingType": "Right-arm leg-spin",
+      "biddingPrice": 2100000
+    },
+    {
+      "playerId": 10,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/J3vCmv6/4701681.jpg",
+      "role": "Batsman",
+      "battingType": "Right-handed",
+      "bowlingType": "Right-arm off-spin",
+      "biddingPrice": 2600000
+    },
+    {
+      "playerId": 11,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://i.ibb.co.com/qJkS0nS/RASHID-KHAN-COMPLETES-500-WICKETS.jpg",
+      "role": "Bowler",
+      "battingType": "Right-handed",
+      "bowlingType": "Leg-spin",
+      "biddingPrice": 2400000
+    },
+    {
+      "playerId": 12,
+      "name": "Trent Boult",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/g9WHDvB/9949321.webpB",
+      "role": "Bowler",
+      "battingType": "Left-handed",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 2200000
+    }
+]
