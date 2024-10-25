@@ -12,6 +12,8 @@ import Selected from "./Components/Selected/Selected";
 function App() {
   const [players, setPlayers] = useState([]);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [claimFreeCredit, setClaimFreeCredit] = useState(0);
+  const [showAvailable, setShowAvailable] = useState(true);
 
   useEffect(() => {
     fetch("fakeData.json")
@@ -25,9 +27,7 @@ function App() {
     status: "avail",
   });
 
-  const [claimFreeCredit, setClaimFreeCredit] = useState(0);
-
-  const [showAvailable, setShowAvailable] = useState(true);
+  
   const handelIsActiveState = (status) => {
    
     if (status === "avail") {
@@ -44,7 +44,7 @@ function App() {
 
   };
 
-  console.log(selectedPlayers)
+
   const handleClaimFreeCredit = () => {
     setClaimFreeCredit(claimFreeCredit + 10000000);
     toast.success("Congratulation Free Coin Added Successfully");
@@ -52,11 +52,21 @@ function App() {
 
   const handleSelectPlayer = (newPlayer)=>{
      const isSelected = selectedPlayers.some(singlePlayer=> singlePlayer.playerId === newPlayer.playerId)
-     console.log(isSelected)
+     
+     if(selectedPlayers.length>5){
+      alert("You can add maximum 6 players")
+      return;
+    }
+
      if(isSelected){
         alert("Sorry.Already added the player")
         return 
       } 
+      
+      if(claimFreeCredit<newPlayer.biddingPrice) {
+         alert("Not Enough Money")
+    } 
+    setClaimFreeCredit(claimFreeCredit-newPlayer.biddingPrice)
       alert("Successfully Selected Player")
     setSelectedPlayers((prevSelected)=>[...prevSelected,newPlayer])
 }
@@ -99,7 +109,10 @@ function App() {
         {/* <Selected players={players}
         showAvailable={showAvailable}></Selected> */}
        {  !showAvailable &&
-          <div className="bg-red-400 mt-14 mb-32">
+          <div className=" mt-14 mb-32">
+            <div className="my-5 p-2">
+              <p className="text-2xl">Selected ({selectedPlayers?.length}/6) </p>
+            </div>
           { 
             selectedPlayers.map((player, idx) => (
               <Selected key={idx} 
@@ -108,7 +121,13 @@ function App() {
               showAvailable={showAvailable}
               ></Selected>
             ))
+  
           }
+          <div className="m-5 ">
+            <button onClick={()=>{setShowAvailable(true)
+              handelIsActiveState("avail")
+            }} className="btn bg-yellow-500">Add More</button>
+          </div>
         </div>
        }
       </section>
